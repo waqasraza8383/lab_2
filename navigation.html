@@ -5,14 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+ <style>
+.navbar {
+    background-color: #2c3e50;
+    padding: 15px;
+    text-align: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #f1c40f;
+}
+
+/* Active Page Highlight */
+.active {
+    border-bottom: 3px solid yellow;
+}
+</style>
 <body>
-    <nav>
-        <a href="#Home">Home</a>
-        <a href="#about">Contact us</a>
-        <a href="Contact">Coures</a>
-        <a href="Courses">Courses</a>
-        <a href="https://www.uetpeshawar.edu.pk/">Uet Peshawar</a>
-    </nav>
+    <nav class="navbar">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="schedule.html" class="nav-link">Schedule</a>
+    <a href="navigation.html" class="nav-link">Navigation</a>
+</nav>
+    <a href="navigation.html" class="nav-link active">Navigation</a>
     <section id="Home">
         <h2>welcome to the Home page</h2>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, nam!</p>
@@ -33,5 +55,8 @@
         <h3>this is Courses</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, nam!</p>
     </section>
+    <p style="text-align:center;">
+    <a href="index.html">← Back to Home</a>
+</p>
 </body>
 </html>
